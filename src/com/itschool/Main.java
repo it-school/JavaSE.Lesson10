@@ -37,7 +37,7 @@ public class Main {
         User user = new User(id, "login", "password", "Name");
         System.out.println("User has" + (db.add(user) ? "" : "n't") + " been added succesfuly");
         System.out.println("User has" + (db.add(user) ? "" : "n't") + " been added succesfuly");
-
+        db.getUser(1).setRole(Type.опытный_пользователь);
         System.out.println(db);
     }
 }

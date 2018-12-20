@@ -48,6 +48,7 @@ public class User
         this.login = login;
         this.password = password;
         this.name = name;
+        this.role = Type.гость;
     }
 
     public User()
@@ -59,6 +60,18 @@ public class User
     String password;
     String name;
 
+    public Type getRole()
+    {
+        return role;
+    }
+
+    public void setRole(Type role)
+    {
+        this.role = role;
+    }
+
+    Type role;
+
     @Override
     public String toString()
     {
@@ -67,6 +80,7 @@ public class User
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
+                ", role='" + role + '\'' +
                 '}';
     }
 }
